@@ -1,0 +1,43 @@
+main{
+    padding-top: 70px;
+}
+
+.section1{
+    background-image: url(../images/content.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Adjust the height as necessary */
+    height: 90.3vh;
+    position: relative;
+}
+
+.content-box{
+    height: 90.3vh;
+    width: 50vw;
+    background-color: #ffffff;
+    opacity: 0.5;
+    float: right;
+}
+
+
+.section2{
+    height: 90.3vh;
+}
+
+.content-box h1{
+    text-align: right;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+.content-box p{
+    margin-top: 10px;
+    text-align: justify; /* Align text to justify */
+    text-justify: inter-word; /* Apply inter-word justification */
+    line-height: 1.5;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+}

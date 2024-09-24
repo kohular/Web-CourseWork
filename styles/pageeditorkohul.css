@@ -1,0 +1,123 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial
+}
+
+body{
+    background: linear-gradient(to bottom, #002032, black  );
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1320px;
+}
+img{
+    width: 500px;
+    height: auto;
+    border-radius: 100%;
+    position: relative;
+    top: 150px;
+    left: 520px;
+}
+h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+.name-container,
+.education-container,
+.work-container{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 34%;
+    margin-right: 0px;
+    text-align: center;
+    gap: 0px;
+}
+h3{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 260px;
+    border-bottom: 1px solid gray;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    top: 270px;
+}
+.school,
+.uni,
+.task-1,
+.task-2{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.task-1,
+.task-2{
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 200px;
+    z-index: 2;
+    cursor: pointer;
+}
+.task-1:active,.task-1:hover,
+.task-2:active, .task-2:hover{
+    background:none;
+    transition: none;
+}
+.store-link{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 160px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    margin-left: 170px;
+    text-align: center;
+}
+.images,
+.connector{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.footer-image{
+    width: 200px;
+    height: auto;
+    left: 500px;
+}
+.student{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 150px;
+    left: -65px;
+}
+.connector{
+    position: relative;
+    top: -120px;
+    margin-left: 440px;
+}
+.connector p{
+    margin-right: 10px;
+}
+.creator{
+    margin-top: 15px;
+    position: relative;
+    top: 150px;
+    left: -65px; 
+}

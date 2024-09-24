@@ -1,0 +1,302 @@
+body {
+    font-size: 20px;
+    height: 1500px;
+}
+
+.logo {
+    width: 200px;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+
+header div {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 0px;
+}   
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+fieldset {
+    width: 600px;
+    height: 260px;
+    font-size: 10px;
+    margin-left: 300px;
+    margin-bottom: 20px;
+}
+
+.order {
+    margin-left: 350px;
+    font-weight: bold;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+}
+
+.buyout-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.delivery {
+    color: green;
+    font-size: 18px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.product {
+    width: 150px;
+}
+
+.info {
+    width: 420px;
+    margin-left: 30px;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(167, 0, 0);
+    margin: 0px;
+}
+
+.qty {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.change {
+    display: flex;
+    flex-direction: row;
+}
+
+.remove {
+    font-size: 16px;
+    font-weight: bold;
+    color: #0078bd;
+    margin-right: 10px;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
+
+.date-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+}
+
+.date-info p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 72px;
+    margin-left: 30px;
+}
+
+.date-info div {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.date-info div p {
+    color: gray;
+    font-size: 13px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+
+.payout {
+    width: 300px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    position: fixed; /* Change position to fixed */
+    right: 10px; /* Adjust positioning as needed */
+    top: 50px; /* Adjust positioning as needed */
+    height: calc(100vh - 200px); /* Set a fixed height relative to the viewport height */
+    overflow-y: auto;
+}
+
+.cost-cal {
+    display: flex;
+    flex-direction: column;
+}
+.cost-cal p{
+    margin-bottom: 2px;
+}
+
+.payout p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.total-cost,
+.shipping-cost,
+.before-cost,
+.after-cost {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 30px;
+}
+.line{
+    margin-top: 2px;
+    border-bottom: 1px solid gray;
+    width: 30px;
+    position: relative;
+    left: 255px;
+}
+.payment{
+    display: flex;
+    flex-direction: column;
+
+}
+.line2{
+    margin-top: 4px;
+    border-bottom: 1px solid gray;
+    margin-bottom: 4px; ;
+}
+.order-total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(146, 2, 2);
+}
+.pay-button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    padding: 7px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    width: 250px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.making-pay{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.making-pay input{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(183, 188, 191);
+    padding: 16px 15px 5px;
+    border-style: solid;
+    width: 90%;
+    direction: ltr;
+    text-align: left;
+    margin-bottom: 6px;
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.exp{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(183, 188, 191);
+    padding: 16px 15px 5px;
+    border-style: solid;
+    width: 45%;
+    direction: ltr;
+    text-align: left;
+    margin-bottom: 6px;
+    margin-right: 10px; 
+}
+.code{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(183, 188, 191);
+    padding: 16px 15px 5px;
+    padding-right: 15px;
+    border-style: solid;
+    width: 50%;
+    direction: ltr;
+    text-align: left;
+    margin-bottom: 6px; 
+}
+.names{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.fName{
+    margin-right: 10px;
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;;
+}
+.check input{
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(183, 188, 191);
+    padding: 0px;
+    padding-right: 0px;
+    border-style: solid;
+    direction: none;
+    margin-bottom: 6px;
+    margin: 0px;
+    width: 20px;
+}
+.check label{
+    margin-left: 10px;
+}
+.making-pay .continue{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(183, 188, 191);
+}
+.paynow{
+    padding: 7px;
+    background-color: #002032;
+    color: white;
+    width: 250px;
+    margin-left: 30px;
+    border-style: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s; 
+}
+.paynow:hover{
+    transform: scale(1.05);
+}
+.days{
+    color: green;
+}

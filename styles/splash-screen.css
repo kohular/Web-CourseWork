@@ -1,0 +1,72 @@
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    font-family: "Rakkas", serif;
+}
+main{
+    position: relative;
+}
+footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%; 
+}
+
+h1, h2 {
+    margin: 0 auto; 
+    max-width: 90%; 
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+
+}
+
+h1 {
+    font-size: 120px;
+    color: #0d3a61;
+    position: relative; 
+    top: 110px;
+}
+
+h2 {
+    max-width: 60%;
+    font-size: 40px;
+    color: whitesmoke;
+    position: relative; 
+    top: 180px;
+}
+
+.name {
+    display: inline-block; 
+    color:rgb(192, 223, 255);
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    position: relative;
+    bottom: 0px;
+    z-index: 2;
+    opacity: 0;
+}
+
+.creator {
+    color: white; 
+    font-size: 16px; 
+    text-align: center; 
+    padding: 10px;
+}
+
+img{
+    width: 200px;
+    position: fixed;
+    right: 10px;
+}
+#objectToRotate {
+    width: 90px;
+    position: absolute;
+    top: -100%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+  }

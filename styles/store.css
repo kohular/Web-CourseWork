@@ -1,0 +1,323 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial
+}
+
+body{
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+
+main{
+    height: 1700px;
+    border-radius: 20px;
+}
+h1{
+    text-align: center;
+    position: relative;
+    top: 150px;
+    color: white;
+}
+.all-products{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 36, 54, 0.9);
+    border-radius: 20px;
+    padding-top: 50px;
+    position: relative;
+    top: 250px;
+    width: 1519px;
+    height: 1250px;
+}
+.filteration {
+    position: relative;
+    top: 15px;
+    left: 0px;
+    width: 30%; /* Reduce the width of the filteration div */
+    padding: 0 20px; /* Add padding to prevent cramped appearance */
+    border-right: 1px solid white;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+    .filteration {
+        width: 100%; /* Set the width to full on smaller screens */
+        border-right: none; /* Remove the right border on smaller screens */
+    }
+}
+.only-products {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    justify-content: space-between; /* Distribute items evenly across the container */
+    flex: 1;
+}
+
+.individual-product {
+    width: 25%; /* Set the width of each product container (4 products in a row) */
+    margin-bottom: 20px; /* Add margin between products */
+}
+
+@media screen and (max-width: 1200px) {
+    .individual-product {
+        width: calc(33.33% - 20px); /* Set the width for smaller screens (3 products in a row) */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .individual-product {
+        width: calc(50% - 20px); /* Set the width for even smaller screens (2 products in a row) */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .individual-product {
+        width: calc(100% - 20px); /* Set the width for small screens (1 product in a row) */
+    }
+}
+.products-overview{
+    align-items: center;
+    position: absolute;
+    left: 460px;
+    top: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border-style: none;
+    transition: transform 0.3s;
+}  
+.products-overview:hover{
+    transform: scale(1.05);
+}
+.filter-options{
+    align-items: center;
+    position: absolute;
+    font-weight: bolder;
+    left: 30px;
+    top: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 25px;
+    border-style: none;
+    transition: transform 0.3s;
+}
+.filter-options:hover{
+    transform: scale(1.05);
+}
+.personalisation{
+    margin-left: 10px;
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+.personalisation:hover{
+    transform: scale(1.05);
+}
+option{
+    color: white;
+    background-color: #002032;
+    cursor: pointer;
+}  
+label{
+    font-size: 16px;
+}
+.product-count{
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.individual-product{
+    border-radius: 25px;
+    transition: box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.individual-product:hover{
+    box-shadow: 0 4px 8px rgba(14, 195, 255, 0.7);
+}
+
+.product-image-1,
+.product-image-2,
+.product-image-3,
+.product-image-4,
+.product-image-5,
+.product-image-6,
+.product-image-7,
+.product-image-8,
+.product-image-9,
+.product-image-10,
+.product-image-11,
+.product-image-12 {
+    background-color: white;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    left: 0px; 
+}
+.price,
+.name{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price{
+    font-family: "EB Garamond",Arial, Helvetica, sans-serif;
+}
+.product-price{
+    color: #1e7acd;
+}
+.button-container {
+    display: flex;
+    align-items: center;
+}
+button{
+    background-color: #1e7acd;
+    color: white;
+    border-radius: 40px;
+    border-style: none;
+    width: 100px;
+    font-size: 15px;
+    padding: 8px 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+button:hover{
+    transform: scale(1.05);
+}
+.rating{
+    width: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.quantity-selector {
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+form{
+    display: block;
+    text-align: left;
+    color: white;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+form legend{
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+form div{
+    display: block;
+    text-align: left;
+    font-weight: none;
+    color: rgb(170, 170, 170);
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.blue{
+    color: lightblue;
+    font-weight: bold;
+}
+.orange{
+    color: orange;
+    font-weight: bold;
+}
+.green{
+    color: green;
+    font-weight: bold;
+}
+.red{
+    color: red;
+    font-weight: bold;
+}
+.purple{
+    color: purple;
+    font-weight: bold;
+}
+.white{
+    color: white;
+    font-weight: bold;
+}
+#description{
+    margin-right: 15px;
+}
+.cart-quantity-image{
+    width: 45px;
+    position: fixed;
+    top: 95px;
+    right: 5px; 
+    cursor: pointer;
+}
+.cart-count-number{
+    position: fixed;
+    top: 80px;
+    right: 22.5px; 
+    color: white;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    background-color: #002032;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    bottom: -350px;
+    width: 100%; 
+    text-align: center;
+    align-items: center;
+    height: 170px;
+}
+.images,
+.connector{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-image{
+    width: 50px;
+    height: auto;
+}
+.student{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+.student:active, .student:hover{
+    background: none;
+}
+.connector{
+    position: relative;
+}
+.connector p{
+    margin-right: 5px;
+}
+.creator{
+    margin-top: 10px;
+}
