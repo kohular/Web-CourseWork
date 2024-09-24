@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/store.css">
+    <script src="../js/nav-bar.js">
+    </script>
+    <title>Ocean Pulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lilita+One&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../images/logo.svg" alt="Ocean_Pulse_Logo">
+        </div>
+
+        <nav>
+            <ul class="webpages">
+                <li><a href="../html/home.html">Home</a></li>
+                <li><a href="../../Student4/html/gallery.html">Gallery</a></li>
+                <li><a href="../../Student1/html/store.html">Store</a></li>
+                <li><a href="../../Student4/html/sitemap.html">Sitemap</a></li>
+                <li><a href="../../Student3/html/aboutus.html">About us</a></li>
+            </ul>
+        </nav>    
+
+        <div class="hamburger-toggle">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </header>
+    <main>
+        <h1>Products</h1>
+        <div class="all-products">
+            <h2 class="filter-options">Filter Options</h2>
+            <div class="filteration">
+                <div>
+                    <form>
+                        <Fieldset>
+                            <legend>Products Category</legend>
+                            <div>
+                                <input type="radio" name="Category" id="cleanup" value="Cleanup Products" onclick="changingToCleanup()" checked>
+                                <label for="cleanup">Cleanup Products (12)</label>
+                            </div>    <br>
+                            <div>
+                                <input type="radio" name="Category" id="detoxic" value="Detoxic Products" onclick="changingToDetoxic()" >
+                                <label for="detoxic">Detoxic Products (12)</label>
+                            </div>  <br>
+                            <div>
+                                <input type="radio" name="Category" id="upcycled" value="Upcycled Products" onclick="changingToUpcycled()" >
+                                <label for="upcycled">Upcycled Wear Products (12)</label>
+                            </div> <br>
+                            <div>    
+                                <input type="radio" name="Category" id="eco" value="Eco-Smart Products" onclick="changingToEco()" >
+                                <label for="eco">Eco-Smart Products (12)</label>
+                            </div> <br>
+                            <div>    
+                                <input type="radio" name="Category" id="transit" value="Green Transit Products" onclick="changingToTransit()">
+                                <label for="transit">Green Transit Products (12)</label>
+                            </div>  
+                        </Fieldset>        
+                    </form>
+                </div> 
+                <h2 class="personalisation">Personalisation</h2>
+            <div class="personalisation-options">
+                <form>
+                    <fieldset>
+                        <legend>Color</legend>
+                        <div>
+                            <input type="radio" name="personalisation" id="blue" value="blue" checked>
+                            <label class="blue" for="personalisation">Blue</label>
+                        </div>    <br>
+                        <div>
+                            <input type="radio" name="personalisation" id="black" value="black">
+                            <label class="orange" for="personalisation">Orange</label>
+                        </div>    <br>
+                        <div>
+                            <input type="radio" name="personalisation" id="green" value="green">
+                            <label class="green" for="personalisation">Green</label>
+                        </div>    <br>
+                        <div>
+                            <input type="radio" name="personalisation" id="purple" value="purple">
+                            <label class="purple" for="personalisation">Purple</label>
+                        </div>    <br>
+                        <div>
+                            <input type="radio" name="personalisation" id="red" value="red">
+                            <label class="red" for="personalisation">Red</label>
+                        </div>    <br>
+                        <div>
+                            <input type="radio" name="personalisation" id="white" value="white">
+                            <label class="white" for="personalisation">White</label>
+                        </div>    <br>
+                    </fieldset>
+                </form>
+            </div>   
+            <div class="shipping-options">
+                <form>
+                    <fieldset>
+                        <legend>Description</legend>
+                        <label for="description">Extra description</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+            <h2 class="products-overview">Beach Cleanup Products</h2>
+            <p class="product-count">12 Products</p>   
+            <div class="only-products js-products-container">
+                <div class="individual-product" id="c1">
+                    <img class="product-image-1" src="../images/product-images/diykit.webp">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-1 name">Diy Cleanup Kit</p>
+                    <p class="product-price-1 price">£12</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Diy Cleanup Kit" data-product-price="£12" data-product-id = "c1">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>    
+                </div> 
+                <div class="individual-product" id="c2">
+                    <img class="product-image-2" src="../images/product-images/cleanup-pack.webp">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-2 name">Basic Cleanup Pack</p>
+                    <p class="product-price-2 price">£8</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Basic Cleanup Kit" data-product-price="£8" data-product-id = "c2">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c3">
+                    <img class="product-image-3" src="../images/product-images/litter-picker.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-3 name">Litter Picker</p>
+                    <p class="product-price-3 price">£5</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Litter Picker" data-product-price="£5" data-product-id = "c3">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c4">
+                    <img class="product-image-4" src="../images/product-images/litter-kit.webp">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-4 name">Litter Picker Kit</p>
+                    <p class="product-price-4 price">£12.50</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Litter Picker Kit" data-product-price="£12.50" data-product-id = "c4">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>  
+                <br>     
+                <div class="individual-product" id="c5">
+                    <img class="product-image-5" src="../images/product-images/waterhaul.webp">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-5 name">Waterhaul Cleanup Kit</p>
+                    <p class="product-price-5 price">£40</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Waterhaul Cleanup Kit" data-product-price="£40" data-product-id = "c5">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c6">
+                    <img class="product-image-6" src="../images/product-images/debris-remover.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-6 name">Sifter</p>
+                    <p class="product-price-6 price">£3.50</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Sifter" data-product-price="£3.50" data-product-id = "c6">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c7">
+                    <img class="product-image-7" src="../images/product-images/diving-kit.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-7 name">Diving Kit</p>
+                    <p class="product-price-7 price">£300</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Diving Kit" data-product-price="£300" data-product-id = "c7">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c8">
+                    <img class="product-image-8" src="../images/product-images/mini-oxtgen-tank.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-8 name">Mini Oxygen tank</p>
+                    <p class="product-price-8 price">£100</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Mini Oxygen tank" data-product-price="£100" data-product-id = "c8">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>  
+                <div class="individual-product" id="c9">
+                    <img class="product-image-9" src="../images/product-images/gloves.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-9 name">Cleaning Gloves</p>
+                    <p class="product-price-9 price">£20</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Cleaning Gloves" data-product-price="£20" data-product-id = "c9">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c10">
+                    <img class="product-image-10" src="../images/product-images/trash-compactor.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-10 name">Trash Compactor</p>
+                    <p class="product-price-10 price">£250</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Trash Compactor" data-product-price="£250" data-product-id = "c10">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c11">
+                    <img class="product-image-11" src="../images/product-images/bin.jpg">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-11 name">Bin</p>
+                    <p class="product-price-11 price">£30</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Bin" data-product-price="£30" data-product-id = "c11">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div> 
+                <div class="individual-product" id="c12">
+                    <img class="product-image-12" src="../images/product-images/bag.png">
+                    <img class="rating" src="../images/product-images/5-star.svg">
+                    <p class="product-name-12 name">Recycled Litter Bags</p>
+                    <p class="product-price-12 price">£3.50</p>
+                    <div class="container">
+                        <button class="js-add-to-cart" data-product-name="Recycled Litter Bags" data-product-price="£3.50" data-product-id = "c12">Add to cart</button>
+                        <select class="quantity-selector">
+                            <option selected value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>      
+            </div>     
+        </div>
+        <footer> 
+            <div class="images">
+                <img class="footer-image" src="../images/fbook.png" alt="facebook">
+                <img class="footer-image" src="../images/i.png" alt="linkedin">
+                <img class="footer-image" src="../images/ins.png" alt="instagram">
+            </div>    
+            <a href="personal-info.html" class="student"><p>Page Editor|Kohul</p></a>
+            <div class="connector">
+                <p>Home</p>
+                <p>About</p>
+                <p>Services</p>
+                <p>Products</p>
+                <p>Contacts</p>
+            </div>
+            <p class="creator"> © Ocean Pulse</p>
+        </footer>
+        <div class="checkout">
+            <a onclick="goToPayment()"><img src="../images/product-images/cart.svg" class="cart-quantity-image"></a>
+            <p class="cart-count-number">0</p>
+        </div>    
+    </main>
+    <script src="../js/cart2.js">
+    </script>
+    <script src="../js/cart.js">
+    </script>
+</body>
+</html>

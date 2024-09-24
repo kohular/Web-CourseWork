@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <link rel="stylesheet" href="../styles/splash-screen.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lilita+One&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <div class="'link">
+    <meta http-equiv="refresh" content="5;cart.html">
+    <title>Marine Conservation</title>
+</head>
+<body>
+    <header>
+        <p class="name" >Kohul Anandarajah</p>
+        <p class="name">Dulasi Keerthirathne</p>
+        <p class="name">Dulith Mayakaduwa</p>
+        <p class="name">Lakindu Muthsanda</p>
+        <img src="../images/logo.svg" alt="OceanPulse">
+    </header>
+
+    <main>
+        <h1>OCEAN PULSE</h1>
+
+        <h2>Conserve and sustainably use the oceans, seas and marine resources for sustainable development</h2>
+    </main>  
+    <footer> 
+        <img id="objectToRotate" src="../images/loading.svg" alt="loading">
+        <p class="creator"> © Kohul Anandarajah</p>
+    </footer>    
+    <script>
+        let names = document.querySelectorAll(".name");
+        let index = 0
+
+        function displayName(){
+            if(index < names.length){
+                names[index].style.opacity = "1";
+                index++
+            }
+
+        }
+        setInterval(displayName, 1000);
+
+        var object = document.getElementById("objectToRotate");
+        var angle = 0;
+
+        function rotateObject() {
+            angle -= 3;
+            object.style.transform = "rotate(" + angle + "deg)";
+            requestAnimationFrame(rotateObject);
+        }
+
+        rotateObject();
+    </script>
+</body>
+</html>

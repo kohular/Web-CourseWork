@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/checkout.css">
+    <script src="../js/nav-bar.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantora+One&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lilita+One&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rakkas&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <div class="'link">
+
+    </div>
+    <title>Ocean Pulse</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="../images/logo.svg" alt="logo">
+        <div class="checkout-count">
+            Checkout()
+        </div>
+    </header>
+    <main>
+        <p class="order">Review Your Order</p>
+
+        <form>
+            <div class="js-order-summary">
+                
+             </div>   
+            <fieldset class="payout">
+                <div class="cost-cal">
+                    <p>Order Summary</p>
+                    <div class="total-cost">
+                        <p class="items">Items ():</p>
+                        <p class="product-cost">£7.99</p>
+                    </div>
+                    <div class="shipping-cost">
+                        <p>Shipping & Delivering:</p>
+                        <p class="shipping">£0.00</p>
+                    </div>
+                    <div class="line"></div>
+                    <div class="before-cost">
+                        <p>Before Donation:</p>
+                        <p class="before-tax">£7.99</p>
+                    </div>
+                    <div class="after-cost">
+                        <p>After Donation (5%):</p>
+                        <p class="after-tax">£7.99</p>
+                    </div>
+                </div>
+                <div class="line2"></div>
+                <div class="payment">
+                    <div class="order-total">
+                        <p>Order Total:</p>
+                        <p class="total">£7.99</p>
+                    </div>
+                </div>
+                <div class="making-pay" id="paymentSection">
+                    <p>Card Details</p>
+
+                    <form id="payment-form">
+                        <input class="cNo" type="text" name="card-name" placeholder="Card number" required pattern="[0-9]{16}" title="Please enter a valid 16-digit card number">
+                        <div class="numbers">
+                          <input class="exp" type="text" name="expiry" placeholder="Expires" required pattern="(0[1-9]|1[0-2])\/[0-9]{2}" title="Please enter a valid expiration date in MM/YY format">
+                          <input class="code" type="text" name="CVV" placeholder="CVV" required pattern="[0-9]{3}" title="Please enter a valid 3-digit CVV">
+                        </div>
+                      
+                        <p>Billing Information</p>
+                        <div class="names">
+                          <input class="fName" type="text" name="first-name" placeholder="First Name" required>
+                          <input class="lName" type="text" name="last-name" placeholder="Last Name">
+                        </div>    
+                        <input class="country" type="text" name="country" placeholder="Country" required>
+                        <input class="city" type="text" name="city" placeholder="City" required>
+                        <input class="address" type="text" name="address" placeholder="Address" required>
+                        <input class="no" type="tel" name="phone" placeholder="Phone Number" required pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+                        <input class="mail" type="email" name="email" placeholder="Email" required>
+                    <div class="check">
+                        <input class="checkbox" type="checkbox" checked>
+                        <label for="">Ship to Billing Address</label>
+                    </div>
+                    <p class="continue">By continuing, you confirm you are 18 & above</p>
+                    <button class="paynow" onclick="paymentMade()">Pay Now</button>
+                </div>    
+            </fieldset>
+        </form>
+    </main>
+    <script src="../js/cart2.js">
+    </script>
+    <script src="../js/cart.js">
+    </script>
+    <script src="../js/checkout.js">
+    </script>
+</body>
+</html>
